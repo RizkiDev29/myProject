@@ -199,4 +199,33 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+    /**
+     * --------------------------------------------------------------------------
+     * Custom CSS files
+     * --------------------------------------------------------------------------
+     *
+     * Prototype:
+     *   $csStyles = [
+     *       'https://example.com/style.css',
+     *   ];
+     */
+    public array $csStyles = [
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
+        'css/custom.css',
+    ];
+
+    /**
+     * --------------------------------------------------------------------------
+     * Custom JS files
+     * --------------------------------------------------------------------------
+     *
+     * Prototype:
+     *   $jsScripts = [
+     *       'https://example.com/script.js',
+     *   ];
+     */
+    public array $jsScripts = [
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js',
+    ];
 }
